@@ -1,12 +1,15 @@
-<h1>{{title}}</h1>
-<mat-toolbar>
-    Side Navigation 
-</mat-toolbar>
+<mat-toolbar>Mat toolbar </mat-toolbar>
 <mat-sidenav-container>
-    <mat-sidenav>
+    <mat-sidenav class="mat-elevation-z8" mode="side"  opened >
+        <button mat-button class="menu-button">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </button>
+        <button mat-button class="menu-button">
+            <mat-icon>person</mat-icon>
+            <span>profile</span>
+        </button>
     </mat-sidenav>
-    <mat-sidenav-content>
-        <div>Main content here </div>
-        Ye hai mat sidenav content 
-    </mat-sidenav-content>
+
+    <mat-sidenav-content class="content mat-elevation-z8">Main</mat-sidenav-content>
 </mat-sidenav-container>
